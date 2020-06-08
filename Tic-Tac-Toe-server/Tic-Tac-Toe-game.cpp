@@ -1,5 +1,5 @@
 
-#include "stdafx.h"
+
 #include"Tic-Tac-Toe-game.h"
 
 void init(char chess[row][col])
@@ -15,7 +15,7 @@ void init(char chess[row][col])
 
 void print(char chess[row][col])
 {
-	cout << " ¡ª ¡ª ¡ª" << endl;
+	cout << " â€” â€” â€”" << endl;
 	for (int i = 0; i < row; i++)
 	{
 		for (int j = 0; j < col; j++)
@@ -23,7 +23,7 @@ void print(char chess[row][col])
 			cout << "| " << chess[i][j];
 		}
 		cout << "|" << endl;
-		cout << " ¡ª ¡ª ¡ª" << endl;
+		cout << " â€” â€” â€”" << endl;
 	}
 }
 
@@ -74,7 +74,7 @@ void player_server(char chess[row][col])
 	int x, y;
 	while (1)
 	{
-		cout << "Íæ¼ÒÇëÂä×Ó£¨ÊäÈëxºÍy×ø±ê£©" << endl;
+		cout << "çŽ©å®¶è¯·è½å­ï¼ˆè¾“å…¥xå’Œyåæ ‡ï¼‰" << endl;
 		cin >> x >> y;
 		if (chess[x - 1][y - 1] == ' ' && x >0 && x <= row && y > 0 && y <= col)
 		{
@@ -82,7 +82,7 @@ void player_server(char chess[row][col])
 			break;
 		}
 		else {
-			cout << "Âä×ÓÊ§°Ü£¬ÇëÖØÐÂÂä×Ó" << endl;
+			cout << "è½å­å¤±è´¥ï¼Œè¯·é‡æ–°è½å­" << endl;
 		}
 	}
 }
@@ -92,7 +92,7 @@ void player_client(char chess[row][col])
 	int x, y;
 	while (1)
 	{
-		cout << "Íæ¼ÒÇëÂä×Ó£¨ÊäÈëxºÍy×ø±ê£©" << endl;
+		cout << "çŽ©å®¶è¯·è½å­ï¼ˆè¾“å…¥xå’Œyåæ ‡ï¼‰" << endl;
 		cin >> x >> y;
 		if (chess[x - 1][y - 1] == ' ' && x >0 && x <= row && y > 0 && y <= col)
 		{
@@ -100,7 +100,7 @@ void player_client(char chess[row][col])
 			break;
 		}
 		else {
-			cout << "Âä×ÓÊ§°Ü£¬ÇëÖØÐÂÂä×Ó" << endl;
+			cout << "è½å­å¤±è´¥ï¼Œè¯·é‡æ–°è½å­" << endl;
 		}
 	}
 }
