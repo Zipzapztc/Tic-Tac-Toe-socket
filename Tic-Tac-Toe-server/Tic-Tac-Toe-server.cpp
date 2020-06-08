@@ -1,5 +1,4 @@
 
-#include "stdafx.h"
 #include "Tic-Tac-Toe-game.h"
 #include<winsock2.h>
 #include <WS2tcpip.h>
@@ -108,12 +107,12 @@ int main()
 						print(chess);
 						if (judge_win(chess) == 'X')
 						{
-							cout << "client胜利" << endl;
+							cout << "client鑳滃埄" << endl;
 							break;
 						}
 						else if (judge_full(chess) == 1)
 						{
-							cout << "无人获胜" << endl;
+							cout << "鏃犱汉鑾疯儨" << endl;
 							break;
 						}
 						player_server(chess);
@@ -139,12 +138,12 @@ int main()
 						}
 						if (judge_win(chess) == '0')
 						{
-							cout << "server胜利" << endl;
+							cout << "server鑳滃埄" << endl;
 							break;
 						}
 						else if (judge_full(chess) == 1)
 						{
-							cout << "无人获胜" << endl;
+							cout << "鏃犱汉鑾疯儨" << endl;
 							break;
 						}
 					}
